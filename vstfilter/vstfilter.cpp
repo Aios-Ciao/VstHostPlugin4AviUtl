@@ -3,6 +3,7 @@
 #include <Windows.h>
 
 #include "filter.h"
+#include "pluginterfaces/vst2.x/aeffectx.h"
 
 void hoge(void)
 {
