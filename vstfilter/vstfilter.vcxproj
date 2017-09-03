@@ -83,7 +83,10 @@
     <ClCompile Include="vstfilter.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AviutlFilter.h" />
+    <ClInclude Include="..\Include\common\AviutlFilter.h" />
+    <ClInclude Include="..\Include\common\fCommon.h" />
+    <ClInclude Include="..\Include\common\fFilterBase.h" />
+    <ClInclude Include="..\Include\VstHost\fVSTHostFilter.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

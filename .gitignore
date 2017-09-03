@@ -7,7 +7,7 @@
 *.sln.docstates
 
 # Ignore path of external libralies
-[Ii]nclude/
+[Ii]nclude/pluginterfaces
 
 # Build results
 [Dd]ebug/

@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\common">
+      <UniqueIdentifier>{d59fc050-7c89-4df9-b83b-2c194d229af6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\VstHost">
+      <UniqueIdentifier>{e9176679-fa44-4681-82a2-e1a839d882e2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="vstfilter.cpp">
@@ -20,8 +26,17 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AviutlFilter.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="..\Include\VstHost\fVSTHostFilter.h">
+      <Filter>Header Files\VstHost</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\common\AviutlFilter.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\common\fFilterBase.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Include\common\fCommon.h">
+      <Filter>Header Files\common</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
