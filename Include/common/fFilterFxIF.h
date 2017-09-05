@@ -29,7 +29,7 @@ public:
 	virtual BOOL	func_init(AviutlFilter::FILTER *fp) {};
 	virtual BOOL	func_exit(AviutlFilter::FILTER *fp) {};
 	virtual BOOL	func_update(AviutlFilter::FILTER *fp, int status) {};
-	virtual BOOL	func_WndProc(HWND hwnd, UINT message, WPARAM wparam, LPARAM lparam, void *editp, AviutlFilter::FILTER *f) {};
+	virtual BOOL	func_WndProc(HWND hwnd, UINT message, WPARAM wparam, LPARAM lparam, void *editp, AviutlFilter::FILTER *fp) {};
 	virtual BOOL	func_save_start(AviutlFilter::FILTER *fp, int s, int e, void *editp) {};
 	virtual BOOL	func_save_end(AviutlFilter::FILTER *fp, void *editp) {};
 	virtual BOOL	func_is_saveframe(AviutlFilter::FILTER *fp, void *editp, int saveno, int frame, int fps, int edit_flag, int inter) {};
