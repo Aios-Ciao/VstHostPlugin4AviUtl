@@ -1,12 +1,12 @@
-/*!
-\file   fVSTHostFilter.h
-\brief  Filter class deriverd for VST Host Filter
-Copyright (c) 2017 aios-ciao
-All rights reserved.<BR>
-\b License AviUtlPluginSDK License<BR>
-\b Create 2017/09/3
-\author  aios-ciao
-
+/**
+*	@file   fVSTHostFilter.h
+*	@brief  Filter class deriverd for VST Host Filter
+*			Copyright (c) 2017 aios-ciao
+*			All rights reserved.<BR>
+*			License AviUtlPluginSDK License<BR>
+*	@date	2017/09/3
+*	@author	aios-ciao
+*
 $Revision$
 $Date$
 */
