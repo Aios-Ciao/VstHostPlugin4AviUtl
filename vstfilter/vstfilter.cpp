@@ -13,11 +13,13 @@
 
 //AviutlFilter::FILTER_DLL	oTestFilter1;
 
-AviutlFilter::FILTER_DLL	*filter1;
-fVSTHostFilter	*oVSTFilter;
+AviutlFilter::FILTER_DLL	**pFilterTable;
+fVSTHostFilter	*oVSTFilter1;
+fVSTHostFilter	*oVSTFilter2;
 
-void hoge(void)
-{
+
+//void hoge(void)
+//{
 #if 0
 	tracks = new TrackBar();
 
@@ -42,12 +44,33 @@ void hoge(void)
 	delete tracks;
 
 #endif
-	oVSTFilter = new fVSTHostFilter(TEXT("Filter1"));
+//	oVSTFilter = new fVSTHostFilter(TEXT("Filter1"));
 
-	filter1 = oVSTFilter->getFilterStruct();
+//	filter1 = oVSTFilter->getFilterStruct();
 
 
-	delete oVSTFilter;
+//	delete oVSTFilter;
+//}
+
+
+/* フィルタ情報を渡す */
+
+//#ifndef MULTI_FILTER
+//EXTERN_C __declspec(dllexport) AviutlFilter::FILTER_DLL* __stdcall GetFilterTable(void)
+//{
+//}
+//#else
+//FILTER_DLL* filter_list[] = { &filter, /*+ 追加フィルター */ NULL };
+EXTERN_C __declspec(dllexport)  AviutlFilter::FILTER_DLL** __stdcall GetFilterTableList(void)
+{
+	oVSTFilter1 = new fVSTHostFilter(TEXT("Filter1"));
+	oVSTFilter2 = new fVSTHostFilter(TEXT("Filter2"));
+
+	pFilterTable = new AviutlFilter::FILTER_DLL *[3];
+	pFilterTable[0] = oVSTFilter1->getFilterStruct();
+	pFilterTable[1] = oVSTFilter2->getFilterStruct();
+
+	return pFilterTable;
 }
-
+//#endif
 
